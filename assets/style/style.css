@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#E5E5E5;
+}
+
+.container{
+    width:100vw; 
+    margin: 1vw;
+}
+
+#textDecode{
+    display: flex;
+    background-color:white;
+    border: none;
+    height: 80vh;
+    resize: none;
+    margin-bottom: 15px;
+}
