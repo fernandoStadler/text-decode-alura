@@ -1,49 +1,40 @@
-// As "chaves" de criptografia que utilizaremos são:
-// `A letra "e" é convertida para "enter"`
-// `A letra "i" é convertida para "imes"`
-// `A letra "a" é convertida para "ai"`
-// `A letra "o" é convertida para "ober"`
-// `A letra "u" é convertida para "ufat"`
 
-// **Requisitos:**
-// - Deve funcionar apenas com letras minúsculas
-// - Não devem ser utilizados letras com acentos nem caracteres especiais
-// - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original. 
+const Regex =  /^[a-z\s]+$/; 
 
-// Por exemplo:
-// `"gato" => "gaitober"`
-// `gaitober" => "gato"`
-
-
-const Regex =  /^[a-z]+$/;    
-
+//Regras de negocio e lógica,
 
 function criptografar(str) {
     
     return str
-        .replace(/a/g,"ai")
-        .replace(/e/g,"enter")
-        .replace(/i/g,"ei")
-        .replace(/o/g,"ober")
-        .replace(/u/g,"ufat");
+        .replaceAll("e","enter",)
+        .replaceAll("i","imes")
+        .replaceAll("a","ai")
+        .replaceAll("u","ufat")
+        .replaceAll("o","ober");   
 }
 
 function descriptografar(str) {
     
     return str
-        .replace(/ai/g,"a")
-        .replace(/enter/g,"e")
-        .replace(/ei/g,"i")
-        .replace(/ober/g,"o")
-        .replace(/ufat/g,"u");
+        .replaceAll("enter","e")
+        .replaceAll("imes","i")
+        .replaceAll("ai","a")
+        .replaceAll("ufat","u")
+        .replaceAll("ober","o"); 
 }
 
-var saida = criptografar("gato");
+//Integração com o frontend
+var texto = "gato";
+var saida = criptografar(texto);
+
+var descripto = descriptografar("pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!");
+
+console.log(descripto)
 
 if(Regex.test(saida)==true) {
     console.log(saida);
 } else {
-    console.log("Digite uma msg valida");
-}
+    console.log("Digite uma msg valida"+"SAIDA: "+saida);
+ }
 
 
