@@ -20,21 +20,15 @@ function encrypt() {
             .replaceAll("o", "ober");  
         return encrypt_txt.innerHTML = encrypt_msg;
     } else {
-        alert("Digite uma mensagem")
+        alert("Digite uma mensagem valida")
     }
 }
-
-function teste(){
-    alert(encrypt_txt.innerHTML)
-}
-
 btn_encrypt.onclick = encrypt;
-
 // Função para criar a descriptografia
 function decrypt() {
     var get_msg = encrypt_txt.innerHTML;
     if (Regex.test(get_msg) == true) {
-      var decrypt_msg =  get_msg
+        var decrypt_msg =  get_msg
         .replaceAll("enter", "e")
         .replaceAll("imes", "i")
         .replaceAll("ai", "a")
@@ -42,18 +36,10 @@ function decrypt() {
         .replaceAll("ober", "o");
         return encrypt_txt.innerHTML = decrypt_msg;
     } else {
-        alert("Digite uma mensagem")
+        alert("Digite uma mensagem valida!")
     }
 }
-
 btn_decrypt.onclick = decrypt;
 
-function copy_txt(){
-    var txt_encoded = encrypt_txt.value;
-    txt_encoded.select();
-    document.execCommand("copy");
-    alert(txt_encoded);
-}
 
 
-btn_copy.onclick = copy_txt;
