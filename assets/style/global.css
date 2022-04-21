@@ -7,6 +7,10 @@ body{
     background-color:#E5E5E5;
 }
 
+textarea {
+    resize: none;
+  }
+
 .container{
     width:100vw; 
     margin: 1vw;

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/global.css">
     
-    <title>Decodficador</title>
+    <title>Decodificador</title>
+
 </head>
 <body>
     <div class="container">
@@ -15,23 +16,20 @@
             <div class="txt">
                 <div class="col-1">
                     <h1>Digite a sua mensagem</h1>
-                    <input type="text" id="texto" class="bg-gray" / > 
+                    <textarea id="txt_msg" class="" cols="60" rows="20"></textarea>
                 </div>
-
                 <div class="button">
-                    <button type="button" id="btn" onclick="teste()">Criptografar</button>
-                    <button type="button">Descriptografar</button>
+                    <button type="button" id="btn_encrypt">Criptografar</button>
+                    <button type="button" id="btn_decrypt">Descriptografar</button>
                 </div>
             </div>
             </div>
             <div class="txt">
                 <h1>Mensagem criptografada</h1>
                 <div class="col-2">
-
-                    <p>Texto</p>
-                    <button class="btn-copy">Copiar</button>
+                    <p id="encrypt_txt" value=""></p>
+                    <button id="btn_copy" class="btn-copy">Copiar</button>
                 </div>
-               
             </div>
         </div>
 
