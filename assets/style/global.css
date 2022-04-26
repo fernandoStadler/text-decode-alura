@@ -225,7 +225,6 @@ footer hr {
         margin: 10px;
     }
 
-
 }
 
 @media(max-width:1080px) and (min-width:768px) {
@@ -250,10 +249,7 @@ footer hr {
         border-radius: 90px;
         background-color: #D8DFE8;
         margin: 10px;
-
     }
-
-
     #btn-copy {
         border: none;
         width: 160px;
@@ -263,8 +259,5 @@ footer hr {
         background-color: transparent;
         border: 1px solid #0A3871;
         margin: 10px;
-
-
     }
-
 }

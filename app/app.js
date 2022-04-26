@@ -1,8 +1,11 @@
 
 
 const Regex = /^[a-z\s]+$/;
+
 var txt_msg = document.getElementById("txt_msg");
+
 var encrypt_txt = document.getElementById("encrypt_txt");
+
 var btn_encrypt = document.getElementById("btn_encrypt");
 var btn_decrypt = document.getElementById("btn_decrypt");
 var btn_copy = document.getElementById("btn_copy");
