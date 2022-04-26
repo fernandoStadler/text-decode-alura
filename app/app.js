@@ -26,20 +26,32 @@ function encrypt() {
 btn_encrypt.onclick = encrypt;
 // Função para criar a descriptografia
 function decrypt() {
+    
     var get_msg = encrypt_txt.innerHTML;
-    if (Regex.test(get_msg) == true) {
-        var decrypt_msg =  get_msg
-        .replaceAll("enter", "e")
-        .replaceAll("imes", "i")
-        .replaceAll("ai", "a")
-        .replaceAll("ufat", "u")
-        .replaceAll("ober", "o");
-        return encrypt_txt.innerHTML = decrypt_msg;
-    } else {
-        alert("Digite uma mensagem valida!")
+
+    if(get_msg==""){
+        alert("ESSE CARALHO TÁ VAZIO") 
+    } else{
+        if (Regex.test(get_msg) == true) {
+            var decrypt_msg =  get_msg
+            .replaceAll("enter", "e")
+            .replaceAll("imes", "i")
+            .replaceAll("ai", "a")
+            .replaceAll("ufat", "u")
+            .replaceAll("ober", "o");
+            return encrypt_txt.innerHTML = decrypt_msg;
+        } else {
+            alert("Digite uma mensagem valida!")
+        }
     }
+
 }
 btn_decrypt.onclick = decrypt;
 
-
+function copyMsg() {
+    txt_msg.focus();
+    txt_msg.select();
+    document.execCommand('copy');
+}
+btn_copy.onclick = copyMsg;
 

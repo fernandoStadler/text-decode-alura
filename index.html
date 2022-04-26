@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="assets/style/global.css">
-    
-    <title>Decodificador</title>
-
+    <title>Document</title>
 </head>
-<body>
-    <div class="container">
-        <div class="box">
-            <div class="txt">
-                <div class="col-1">
-                    <h1>Digite a sua mensagem</h1>
-                    <textarea id="txt_msg" class="" cols="60" rows="20"></textarea>
-                </div>
-                <div class="button">
-                    <button type="button" id="btn_encrypt">Criptografar</button>
-                    <button type="button" id="btn_decrypt">Descriptografar</button>
-                </div>
-            </div>
-            </div>
-            <div class="txt">
-                <h1>Mensagem criptografada</h1>
-                <div class="col-2">
-                    <p id="encrypt_txt"></p>
-                    <button id="btn_copy" class="btn-copy">Copiar</button>
-                </div>
-            </div>
-        </div>
 
+<header>
+    <div class="logo">
+        <img src="/assets/img/logo.png" width="30" alt="" srcset="">
+    </div>
+</header>
+<main>
 
-   
+    <div class="box">
+        <section class="center">
+            <textarea name="" id="txt-criptography" class="no-resized txt-criptography" placeholder="Digite seu texto"></textarea>
+            <div class="box center">
+                <button id="btn-criptography">Criptografar</button>
+                <button id="btn-descriptography">Descriptografar</button>
+            </div>
+        </section>
+    </div>
+    <div class="box">
+
+        <section class="center d-none">
+            <textarea name="" id="txt-descriptography" class="no-resized txt-descriptography"></textarea>
+            <div class="box center">
+                <button id="btn-copy">copiar</button>
+            </div>
+        </section>
+
+        <section class="figure">
+            <img src="/assets/img/bg.png" class="img-bg" alt="" srcset="">
+        </section>
+    </div>
+
+</main>
+<footer class="footer">
+    <hr>
+    <p class="text-center">Fernando Stadler</p>
+</footer>
 </body>
-<script src="app/app.js"></script>
+
 </html>
