@@ -2,12 +2,12 @@
 
 const Regex = /^[a-z\s]+$/;
 
-var txt_msg = document.getElementById("txt_msg");
+var txt_msg = document.getElementById("txt-criptography");
 
-var encrypt_txt = document.getElementById("encrypt_txt");
+var encrypt_txt = document.getElementById("txt-descriptography");
 
-var btn_encrypt = document.getElementById("btn_encrypt");
-var btn_decrypt = document.getElementById("btn_decrypt");
+var btn_encrypt = document.getElementById("btn_criptography");
+var btn_decrypt = document.getElementById("btn_descriptography");
 var btn_copy = document.getElementById("btn_copy");
 
 // Função para criar a criptografia
