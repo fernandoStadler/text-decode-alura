@@ -1,6 +1,13 @@
 * {
     margin: 0;
     box-shadow: 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 48px */
+
 }
 
 body {
@@ -58,12 +65,11 @@ main {
     background-color: transparent;
     outline: none;
     padding: 10px;
-    font-size: 16px;
     color: #0A3871;
 
 }
 
-.txt-descriptography{
+.txt-descriptography {
     width: 30vw;
     height: 90vh;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -71,7 +77,6 @@ main {
     border: none;
     outline: none;
     padding: 20px;
-    font-size: 16px;
     color: #0A3871;
 }
 
@@ -104,9 +109,10 @@ main {
     margin: 10px;
 
 }
+
 #btn-criptography:hover {
     background-color: #07264d;
-   
+
 }
 
 #btn-descriptography {
@@ -119,9 +125,10 @@ main {
     margin: 10px;
 
 }
+
 #btn-descriptography:hover {
     background-color: #c0c0c0;
-   
+
 }
 
 
@@ -152,8 +159,9 @@ footer hr {
     margin-left: 0 auto;
 
 }
+
 footer p {
-    margin-top:1vh;
+    margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
@@ -171,7 +179,7 @@ footer p {
 
     }
 
-    
+
     .box {
         display: block;
     }
@@ -182,7 +190,7 @@ footer p {
         margin-top: 10px;
     }
 
-    .txt-descriptography{
+    .txt-descriptography {
         width: 90vw;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -191,6 +199,7 @@ footer p {
 
     .figure {
         display: none;
+
     }
 
     .logo {
@@ -250,6 +259,7 @@ footer p {
         border-radius: 90px;
         background-color: #D8DFE8;
     }
+
     #btn-copy {
         border: none;
         width: 160px;
@@ -260,5 +270,5 @@ footer p {
         border: 1px solid #0A3871;
         margin: 10px;
     }
-    
+
 }
