@@ -148,9 +148,13 @@ footer {
 }
 
 footer hr {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-left: 0 auto;
 
+}
+footer p {
+    margin-top:1vh;
+    margin-bottom: 1vh;
 }
 
 @media (max-width: 768px) {
@@ -162,11 +166,12 @@ footer hr {
 
     footer hr {
         width: 90vw;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         margin-left: 0 auto;
 
     }
 
+    
     .box {
         display: block;
     }
@@ -255,4 +260,5 @@ footer hr {
         border: 1px solid #0A3871;
         margin: 10px;
     }
+    
 }
