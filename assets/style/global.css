@@ -82,18 +82,14 @@ main {
     border-radius: 32px;
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
-
 }
-
 .img-bg {
     display: flex;
     margin: 0 auto;
 }
-
 .text-center {
     text-align: center;
 }
-
 #btn-criptography {
     border: none;
     width: 250px;
@@ -105,10 +101,8 @@ main {
 
 }
 #btn-criptography:hover {
-    background-color: #07264d;
-   
+    background-color: #07264d;  
 }
-
 #btn-descriptography {
     border: none;
     width: 250px;
@@ -120,12 +114,8 @@ main {
 
 }
 #btn-descriptography:hover {
-    background-color: #c0c0c0;
-   
+    background-color: #c0c0c0;  
 }
-
-
-
 #btn-copy {
     border: none;
     width: 250px;

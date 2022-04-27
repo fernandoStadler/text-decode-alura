@@ -26,10 +26,6 @@ function toasty() {
         onClick: function () { } // Callback after click
     }).showToast();
 }
-
-
-
-
 // Função para criar a criptografia
 function encrypt() {
     var get_msg = txt_msg.value;
@@ -70,11 +66,9 @@ function decrypt() {
     return encrypt_txt.value = decrypt_msg;
     // alert(decrypt_msg);
     } else {
-        toasty();
-         
+        toasty();        
     }
 }
-
 // Chama a função de descriptografia e limpa o campo de mensagem
 function clean_decrypt() {
     decrypt();  
