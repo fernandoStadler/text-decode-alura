@@ -82,14 +82,18 @@ main {
     border-radius: 32px;
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
+
 }
+
 .img-bg {
     display: flex;
     margin: 0 auto;
 }
+
 .text-center {
     text-align: center;
 }
+
 #btn-criptography {
     border: none;
     width: 250px;
@@ -101,8 +105,10 @@ main {
 
 }
 #btn-criptography:hover {
-    background-color: #07264d;  
+    background-color: #07264d;
+   
 }
+
 #btn-descriptography {
     border: none;
     width: 250px;
@@ -114,8 +120,12 @@ main {
 
 }
 #btn-descriptography:hover {
-    background-color: #c0c0c0;  
+    background-color: #c0c0c0;
+   
 }
+
+
+
 #btn-copy {
     border: none;
     width: 250px;
@@ -148,11 +158,10 @@ footer hr {
         width: 100vw;
         display: block;
         margin: 0 auto;
-        padding: 10px;
     }
 
     footer hr {
-        width: 100vw;
+        width: 90vw;
         margin-bottom: 50px;
         margin-left: 0 auto;
 
@@ -163,13 +172,13 @@ footer hr {
     }
 
     .txt-criptography {
-        width: 97vw;
+        width: 90vw;
         margin-bottom: 10px;
         margin-top: 10px;
     }
 
     .txt-descriptography{
-        width: 97vw;
+        width: 90vw;
         margin-bottom: 10px;
         margin-top: 10px;
 
@@ -181,14 +190,14 @@ footer hr {
 
     .logo {
         padding: 10px;
-        width: 100vw;
+        width: 90vw;
         margin: 0 auto;
     }
 
     #btn-criptography {
         text-transform: uppercase;
         border: none;
-        width: 100%;
+        width: 90vw;
         height: 50px;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -198,7 +207,7 @@ footer hr {
         text-transform: uppercase;
 
         border: none;
-        width: 100%;
+        width: 90vw;
         height: 50px;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -206,7 +215,7 @@ footer hr {
 
     #btn-copy {
         text-transform: uppercase;
-        width: 100%;
+        width: 90vw;
         color: #0A3871;
         padding: 10px;
         border-radius: 90px;
@@ -224,10 +233,8 @@ footer hr {
         border: none;
         width: 160px;
         color: white;
-        padding: 10px;
         border-radius: 90px;
         background-color: #0A3871;
-        margin: 10px;
 
     }
 
@@ -235,10 +242,8 @@ footer hr {
         border: none;
         width: 160px;
         color: #0A3871;
-        padding: 10px;
         border-radius: 90px;
         background-color: #D8DFE8;
-        margin: 10px;
     }
     #btn-copy {
         border: none;

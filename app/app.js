@@ -9,19 +9,20 @@ var msg_figure = document.getElementById("msg-figure");
 var btn_encrypt = document.getElementById("btn-criptography");
 var btn_decrypt = document.getElementById("btn-descriptography");
 var btn_copy = document.getElementById("btn-copy");
-var texto = "mensagem";
 
 function toasty() {
     Toastify({
-        text: "A mensagem está fora do padrão aceito.",
-        duration: 5000,
+        text: "A mensagem está fora do padrão aceito, por favor revise o texto.",
+        duration: 6000,
         newWindow: true,
         close: true,
         gravity: "top", // `top` or `bottom`
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-            background: " #ff0000",
+            background: " #842029",
+            fontSize: "20px",
+            fontWeight: "bold"
         },
         onClick: function () { } // Callback after click
     }).showToast();
@@ -38,7 +39,6 @@ function encrypt() {
             .replaceAll("o", "ober");
         return encrypt_txt.value = encrypt_msg;
     } else {
-        clean_decrypt();
         toasty();
     }
 }
