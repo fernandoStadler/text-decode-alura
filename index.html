@@ -5,55 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css -->
     <link rel="stylesheet" href="assets/style/global.css">
+    <!-- Toastify  css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <title>Decodificador</title>
 </head>
-
 <header>
     <div class="logo">
-        <img src="../assets/img/logo.png" width="30" alt="" srcset="">
+        <img src="../assets/img/logo.png" width="30">
     </div>
 </header>
-
 <main>
-
     <div class="box">
         <section class="center">
-            <textarea name="" id="txt-criptography" class="no-resized txt-criptography" placeholder="Digite seu texto, apenas letras minúsculas e sem acento."></textarea>
-        
-            
+            <textarea name="" id="txt-criptography" class="no-resized txt-criptography"
+                placeholder="Digite seu texto, apenas letras minúsculas e sem acento." ></textarea>
             <div class="box center">
-             
                 <button id="btn-criptography">Criptografar</button>
                 <button id="btn-descriptography">Descriptografar</button>
             </div>
         </section>
     </div>
     <div class="box">
-
-        <section class="center d-none">
-            <textarea name="" id="txt-descriptography" class="no-resized txt-descriptography"></textarea>
+        <section id="box-descritography" class="center  d-none">
+            <textarea name="" id="txt-descriptography" class="no-resized txt-descriptography" readonly></textarea>
             <div class="box center">
                 <button id="btn-copy">copiar</button>
             </div>
         </section>
-
-        <section class="figure">
+        <section id="msg-figure"class="figure ">
             <img src="../assets/img/bg.png" class="img-bg" alt="" srcset="">
         </section>
     </div>
-
 </main>
 <footer class="footer">
     <hr>
-    <div class="box center text-center">
+    <div class="text-center">
         <a href="http://creativecommons.org/licenses/by">Github</a>&ThinSpace;|&ThinSpace;
-         
+
         <a href="http://creativecommons.org/licenses/by">linkdin</a>
     </div>
     <p class="text-center">Fernando Stadler</p>
 </footer>
+<!-- main js -->
 <script src="app/app.js"></script>
+<!-- toastify js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </body>
 
 </html>
