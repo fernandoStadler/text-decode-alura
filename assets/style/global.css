@@ -145,6 +145,15 @@ main {
 
 
 }
+#btn-copy:hover {
+    border: none;
+    width: 250px;
+    color: #308af0;
+    background-color:transparent;
+    border: 1px solid #308af0;
+
+
+}
 
 footer {
     width: 90vw;

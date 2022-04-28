@@ -10,21 +10,21 @@ var btn_encrypt = document.getElementById("btn-criptography");
 var btn_decrypt = document.getElementById("btn-descriptography");
 var btn_copy = document.getElementById("btn-copy");
 
-function toasty() {
+function toasty(msg,gravity,bg,position) {
 
         box_descritography.classList.add("d-none")
         msg_figure.classList.remove("d-none")
 
     Toastify({
-        text: "A mensagem está fora do padrão aceito, por favor revise o texto.",
+        text: msg,
         duration: 6000,
         newWindow: true,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "center", // `left`, `center` or `right`
+        gravity: gravity, // `top` or `bottom`
+        position: position, // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-            background: " #842029",
+            background: bg,
             fontSize: "20px",
             fontWeight: "bold"
         },
@@ -43,7 +43,7 @@ function encrypt() {
             .replaceAll("o", "ober");
         return encrypt_txt.value = encrypt_msg;
     } else {
-        toasty();
+        toasty("A mensagem está fora do padrão aceito, por favor revise o texto","top","#842029","center");
     }
 }
 
@@ -70,7 +70,7 @@ function decrypt() {
         return encrypt_txt.value = decrypt_msg;
         // alert(decrypt_msg);
     } else {
-        toasty();
+        toasty("A mensagem está fora do padrão aceito, por favor revise o texto","top","#842029","center");
     }
 }
 // Chama a função de descriptografia e limpa o campo de mensagem
@@ -85,6 +85,7 @@ function clean_decrypt() {
 btn_decrypt.onclick = clean_decrypt;
 
 function copyMsg() {
+    toasty("Mensagem copiada com sucesso!","top","#00b285","right");
     encrypt_txt.focus();
     encrypt_txt.select();
     document.execCommand('copy');
