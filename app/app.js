@@ -85,7 +85,7 @@ function clean_decrypt() {
 btn_decrypt.onclick = clean_decrypt;
 
 function copyMsg() {
-    toasty("Mensagem copiada com sucesso!","top","#00b285","right");
+    toasty("Mensagem copiada com sucesso!","top","#00b285","center");
     encrypt_txt.focus();
     encrypt_txt.select();
     document.execCommand('copy');
