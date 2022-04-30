@@ -4,6 +4,8 @@
 
 <div> <img src="https://c.tenor.com/qJ5evVs-_uUAAAAC/coding.gif"/></div>
 
+[Clique aqui para ver o resultado final](https://fernandostadler.github.io/text-decode-alura/)
+
 _Projeto desenvolvido para o primeiro Challenge do Bootcamp Alura e Oracle._
 
 Para desenvolver este projeto utilizei às tecnologias **HTML**, **CSS** e **Javascript**
