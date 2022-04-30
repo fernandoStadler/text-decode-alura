@@ -3,7 +3,7 @@ const Regex = /^[a-z\s]+$/;
 var txt_msg = document.getElementById("txt-criptography");
 
 var encrypt_txt = document.getElementById("txt-descriptography");
-var box_descritography = document.getElementById("box-descritography");
+var box_descritography = document.getElementById("item-2");
 var msg_figure = document.getElementById("msg-figure");
 
 var btn_encrypt = document.getElementById("btn-criptography");

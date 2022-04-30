@@ -1,103 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
 * {
-    margin: 0;
-    box-shadow: 0 0;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    /* or 48px */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
 }
 
 body {
     background-color: #f3f5fc;
+
 }
 
 main {
-    width: 90%;
-    display: flex;
-    margin: 0 auto;
-    padding: 10px;
+    position: relative;
+    width: 98vw;
 }
 
-
-.center {
-    align-self: center;
+.container {
+    display: flex;
+    padding: 0.10em;
     justify-content: center;
-    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10px;
+
+
+
 }
 
 .d-none {
     display: none;
 }
 
-.d-flex {
-    display: flex;
+.d-flex { 
+    display:flex;
 }
-
-.d-block {
-    display: block;
-}
-
-.no-resized {
-    resize: none;
-}
-
-.logo {
-    padding: 10px;
-    width: 90%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.box {
-    display: flex;
-    margin: 0 auto;
-
+.item-1 {
+    margin-right: 10px;
 }
 
 .txt-criptography {
-    width: 50vw;
     border: none;
-    height: 95vh;
     background-color: transparent;
     outline: none;
-    padding: 10px;
-    color: #0A3871;
-
-}
-
-.txt-descriptography {
-    width: 30vw;
-    height: 90vh;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    border: none;
-    outline: none;
-    padding: 20px;
     color: #0A3871;
 }
 
+
+.item-2 {
+    margin-left: 10px;
+
+}
 .figure {
     width: 30vw;
-    height: 100vh;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+    border-radius: 10px;
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
-
 }
 
 .img-bg {
     display: flex;
     margin: 0 auto;
+    height: 50vh;
 }
 
-.text-center {
-    text-align: center;
+.txt-descriptography {
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    width: 30vw;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #0A3871;
+    padding: 0.3em;
 }
+
+.no-resize {
+    resize: none;
+}
+
+.logo {
+    background-color: rgb(250, 250, 250);
+    box-shadow: 10px 1px 10px 1px #308af085;
+    padding: 0.5em;
+    display: flex;
+}
+
+.logo-txt{
+    width: 90vw;
+    text-align: right;
+}
+.txt-center {
+    text-align: center;
+    
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
 
 #btn-criptography {
     border: none;
@@ -145,139 +151,128 @@ main {
 
 
 }
+
 #btn-copy:hover {
     border: none;
     width: 250px;
     color: #308af0;
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid #308af0;
 
 
 }
 
+
 footer {
-    width: 90vw;
-    height: 100px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 25px 10px 10px 10px #308af085;
+
+    left: 0;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
     bottom: 0;
-    margin: 0 auto;
-    margin-top: 10vw;
+    left: 0;
 }
 
-footer hr {
-    margin-bottom: 20px;
-    margin-left: 0 auto;
-
-}
-
-footer p {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-}
-
-@media (max-width: 768px) {
+@media(max-width:1080px) {
+    * {
+        overflow: visible;
+    }
+    
     main {
-        width: 100vw;
+        position: relative;
+        width: 98vw;
+    }
+    
+
+    .container {
+        width: 98vw;
         display: block;
+        justify-content: center;
+    }
+
+    #txt-criptography{
+        width: 98%;
+        margin-right: 10px;
+    }
+
+
+    #txt-descriptography {
+        width: 91.5vw;
         margin: 0 auto;
-    }
 
-    footer hr {
-        width: 90vw;
-        margin-bottom: 30px;
-        margin-left: 0 auto;
 
     }
 
-
-    .box {
+    .btn {
         display: block;
     }
 
-    .txt-criptography {
+    #btn-criptography {
         width: 90vw;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        text-transform: uppercase;
+
+    
+    
+    }
+    #btn-descriptography {
+        width: 90vw;
+    
+        text-transform: uppercase;
+
+    
+    }
+    #btn-copy {
+        width: 90vw;
+        text-transform: uppercase;
+
+    
+    
+    }
+    
+    #btn-copy:hover {
+        width: 90vw;
+        text-transform: uppercase;
+
+    
+    }
+    
+    .item-1 {
+        display: block;
+        width: 98vw;
+        margin: 10px;
+
     }
 
-    .txt-descriptography {
-        width: 90vw;
-        margin-bottom: 10px;
-        margin-top: 10px;
+    .item-2 {
+        width: 98vw;
 
     }
-
     .figure {
         display: none;
 
     }
-
-    .logo {
-        padding: 10px;
-        width: 90vw;
-        margin: 0 auto;
+ 
+    .btn-block {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    #btn-criptography {
-        text-transform: uppercase;
-        border: none;
-        width: 90vw;
-        height: 50px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+    footer {
+        background-color: rgb(250, 250, 250);
+        box-shadow: 25px 10px 10px 10px #308af085;
+        
+        left: 0;
+        margin-top: 100px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
     }
-
-    #btn-descriptography {
-        text-transform: uppercase;
-
-        border: none;
-        width: 90vw;
-        height: 50px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #btn-copy {
-        text-transform: uppercase;
-        width: 90vw;
-        color: #0A3871;
-        padding: 10px;
-        border-radius: 90px;
-        background-color: transparent;
-        border: 1px solid #0A3871;
-        margin: 10px;
-    }
-
-}
-
-@media(max-width:1080px) and (min-width:768px) {
-
-
-    #btn-criptography {
-        border: none;
-        width: 160px;
-        color: white;
-        border-radius: 90px;
-        background-color: #0A3871;
-
-    }
-
-    #btn-descriptography {
-        border: none;
-        width: 160px;
-        color: #0A3871;
-        border-radius: 90px;
-        background-color: #D8DFE8;
-    }
-
-    #btn-copy {
-        border: none;
-        width: 160px;
-        color: #0A3871;
-        padding: 10px;
-        border-radius: 90px;
-        background-color: transparent;
-        border: 1px solid #0A3871;
-        margin: 10px;
-    }
-
+    
 }
